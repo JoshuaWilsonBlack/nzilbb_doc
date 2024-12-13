@@ -1,0 +1,91 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author:
+    - name:
+        given: Joshua
+        family: Wilson Black
+      corresponding: true
+      orcid: 0000-0002-8272-5763
+      url: https://joshua.wilsonblack.nz
+      email: joshua.black@canterbury.ac.nz
+      affiliations:
+      - name: New Zealand Institute for Language, Brain and Behaviour, University of Canterbury
+        city: Christchurch
+        country: New Zealand
+        url: https://www.canterbury.ac.nz/research/about-uc-research/research-groups-and-centres/new-zealand-institute-of-language-brain-and-behaviour
+date: today
+abstract: |
+  This is where the abstract goes.
+license: "CC BY"
+banner-img: images/nzilbb-uc.svg
+lightbox:
+  match: auto
+format: 
+  html:
+    theme:
+      - simplex
+      - brand
+    css: theme.css
+    toc: true
+    toc-depth: 4
+    toc-expand: true
+    toc-location: right
+    code-summary: "To view code click here"
+    anchor-sections: true
+    number-sections: true
+    cap-location: margin
+    title-block-banner: "#edecec"
+    fig-responsive: true
+    lang: 'en-GB'
+    execute:
+      warning: false
+    embed-resources: false
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "images/fav.png" />
+    include-after-body:
+      - text: |
+          <div class ="bottom-logo">
+            <img src = "images/NZILBB-small.svg" width="5%">
+          </div>
+    template-partials:
+      - title-block.html
+bibliography: 
+  - grateful-refs.bib # Change to ../grateful-refs.bib
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+::: callout-note
+Assumed use of this template: create in a subdirectory of an R Project. For 
+instance, a folder called 'markdown' inside the project directory.
+:::
+
+# Introduction
+
+# Libraries and data
+
+```{r}
+library(tidyverse)
+library(grateful) # to cite used packages.
+library(here) # file path management
+```
+
+
+
+```{r}
+#| echo: false
+nocite_references(
+  cite_packages(
+    output = "citekeys", 
+    out.dir = here(), 
+    errors="ignored"
+  )
+)
+```
+
+::: refs
+
+:::
