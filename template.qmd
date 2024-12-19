@@ -35,7 +35,8 @@ format:
     anchor-sections: true
     number-sections: true
     cap-location: margin
-    title-block-banner: "#edecec"
+    title-block-banner: "#e8e4e4"
+    title-block-banner-color: "#3E3C3D"
     fig-responsive: true
     lang: 'en-GB'
     execute:
@@ -61,6 +62,18 @@ editor:
 ::: callout-note
 Assumed use of this template: create in a subdirectory of an R Project. For 
 instance, a folder called 'markdown' inside the project directory.
+:::
+
+::: callout-tip
+Test
+:::
+
+::: callout-caution
+Test
+:::
+
+::: callout-important
+
 :::
 
 # Introduction
