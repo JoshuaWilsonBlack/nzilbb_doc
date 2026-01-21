@@ -78,7 +78,7 @@ Test
 
 # Introduction
 
-# Libraries and data
+# Packages and data
 
 ```{r}
 library(tidyverse)
